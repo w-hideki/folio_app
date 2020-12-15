@@ -2,9 +2,8 @@
   <script>bubbly();</script>
 
 
+<%= image_tag 'portfolio.png', class:'top-image'%>
 
-
-<img class="top-image" src="assets/portfolio.png" alt="画像です">
 <div class="speech-bubble">
 <div class='arrow_box'>こんにちは！！<br>ご訪問頂きありがとうございます。<br>転職活動用にポートフォリオサイトを作りました。まずは下にスクロールをお願いします！！</div>
 </div>
@@ -31,7 +30,7 @@
   </div>
 
   <div class=about-box>
-  <img class="about-image" src="assets/plof-img.jpeg" alt="画像です">
+    <%= image_tag 'plof-img', class:"about-image" %> 
     <div class="about-text">
     <h1><span class="subheading">= パーソナル情報 =</span></h1>
     <p><span class="subheading-name">和田 秀樹</span>（わだ ひでき）<br>
@@ -90,6 +89,6 @@
 </section>
 
 <div class="start">
-    <p><img src="assets/logo2.png" alt="画像です"></p>
+    <p><%= image_tag 'logo2.png' %></p>
 </div>
 
