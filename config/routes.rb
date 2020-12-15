@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get 'folios/index'
+  root to: 'folios#index'
 end
