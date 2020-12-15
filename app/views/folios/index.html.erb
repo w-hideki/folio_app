@@ -15,8 +15,8 @@
     <ul >
     <li class ="btn"><a href="#1">About me</a></li>
     <li class ="btn"><a href="#2">卒業課題</a></li>
-    <li class ="btn"><a href="#3">Rails</a></li>
-    <li class ="btn"><a href="#4">Javascript</a></li>
+    <li class ="btn"><a href="#3">Javascript</a></li>
+    <li class ="btn"><a href="#4">Rails</a></li>
     </ul>
   </div>
 </div>
@@ -77,7 +77,7 @@
       <p>・herokuにてデプロイ</p>
       <p>・商品の画像をS3に保存</p>
       <p>・Basic認証</p>
-      <h1>接続先情報</h1>
+      <h1>実際のアプリ</h1>
       <a href="https://furima-32015.herokuapp.com/" class="link" target=”_blank”>https://furima-32015.herokuapp.com/</a>
       <h1>ソースコード</h1>
       <a href="https://github.com/w-hideki/furima-32015" class="link" target=”_blank”>GitHub</a>
@@ -88,30 +88,113 @@
   </div>
 </section>
 
-
-
 <section id=3>
   <div class="main3-back">
-    <h1>-Rails-</h1>
+    <h1>-Javascript-</h1>
     <div class="main3">
-      <h2>-Rails-</h2>
+      <h2>-Javascript-</h2>
     </div>
   </div>
 
-  <div class="box3">
+  <div class="box-kata">
+    <div class="box-kata-image">
+       <div class="video-todo">
+  <a href="https://gyazo.com/f6879a5b0d89a95d953285b426fd08cf"><video alt="Video from Gyazo" width="500" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/f6879a5b0d89a95d953285b426fd08cf.mp4" type="video/mp4" /></video></a>
+   </div>
+    </div>
+
+    <div class="box-kata-text">
+      <h1>= TODOリスト =</h1>
+      <p>こちらは在学中、個人開発で最初に作ったアプリです!</p>
+      <h1>= 紹介 =</h1>
+      <p>ポートフォリオの最低レベルと噂を聞いたので、javascriptの勉強としてチャレンジしました。</br>
+      まずプレーンなバニラJSで作ってみて、純正の難しさ、記述量を体感しました。それから同じものを、前から興味のあったフレームワークのREACTで書き換えてみました。</br>
+      プラスで、追加機能として登録できる未完了のリストを５個までに制限し、それ以上は入力できないようにする機能を追加しました。</p>
+      <h1>苦労した点</h1>
+      <p>Reactのコンポーネント指向、props、state、理解はまだまだ。</br>
+      でも初めてReactをやる題材としてはぴったりでした。</br>
+      後、小規模なアプリだとバニラJSの方が速くかけるとわかりました。</p>
+      <h1>実際のアプリ</h1>
+      <a href="https://todo-react-32015.herokuapp.com/" class="link" target=”_blank”>https://todo-react-32015.herokuapp.com/</a>
+      <h1>ソースコード</h1>
+      <a href="https://github.com/w-hideki/todo-react" class="link" target=”_blank”>GitHub</a>
+      <h1>開発環境</h1>
+      <p>Github/Heroku/javascript/React/Visual Studio Code</p>
     
+    </div>
+  </div>
+</section>
+
+<section id=3>
+  <div class="main3-back">
+    <h1>-Javascript-</h1>
+    <div class="main3">
+      <h2>-Javascript-</h2>
+    </div>
+  </div>
+
+ <div class="box-kata">
+    <div class="box-kata-image">
+      <%= image_tag 'chat.png', class:"box-image" %>
+       <div class="video">
+<a href="https://gyazo.com/884b0b91da38877b7244e9bdd1ca4663"><video alt="Video from Gyazo" width="500" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/884b0b91da38877b7244e9bdd1ca4663.mp4" type="video/mp4" /></video></a>
+   </div>
+    </div>
+
+    <div class="box-kata-text">
+      <h1>= Reactチャットアプリ =</h1>
+      <p>こちらは在学中、個人開発で２つ目に作ったアプリです!</p>
+      <h1>= 紹介 =</h1>
+      <p>Reactがもっと理解したいと思い、挑戦したのがこのチャットアプリです。</br>ReactはSPA構成になっているのでチャットアプリを作る上では、相性抜群でした。そして、今回はチャットアプリと言うことで、メッセージを保存する機能がいるので、SPAアプリのデータの保存に相性の良いFireBaseと言うサービスを採用しました。</br>
+      機能としてはチャットをすることしかできませんが、多いにReactの勉強になりました。</p>
+      <h1>苦労した点</h1>
+      <P>このようなシンプルなチャットアプリでも、かなりコンポーネントが必要で、どこをimport、exportするのか、ごちゃごちゃになり、大変でした。</br>
+      チャットのアイコンにマテリアルUIを導入するのも難しかったです。</p>
+      <h1>実際のアプリ</h1>
+      <p>FireBaseの無料使用期間が30日のため、デプロイなし</p>
+      <h1>開発環境</h1>
+      <p>javascript/React/FireBase/Visual Studio Code</p>
+    
+    </div>
   </div>
 </section>
 
 <section id=4>
   <div class="main4-back">
-  <h1>-Javascript-</h1>
+  <h1>-Rails-</h1>
     <div class="main4">
-    <h2>-Javascript-</h2>
+    <h2>-Rails-</h2>
     </div>
   </div>
 
-  <div class="box4"></div>
+   <div class="box-kata">
+    <div class="box-kata-image">
+      <%= image_tag 'kakeibo.png', class:"box-image" %>
+       <div class="video">
+<a href="https://gyazo.com/c712ca1a7ec8f1405f8fafe188a823b2"><video alt="Video from Gyazo" width="500" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/c712ca1a7ec8f1405f8fafe188a823b2.mp4" type="video/mp4" /></video></a>
+   </div>
+    </div>
+
+    <div class="box-kata-text">
+      <h1>= 家計簿アプリ =</h1>
+      <p>こちらは在学中、個人開発で最も力を入れて作ったアプリです!</p>
+      <h1>= 紹介 =</h1>
+      <p>今までがフロントエンドのアプリばかりだったので、テックキャンプでは、主にrailsを勉強したので、その総まとめにと思い作りました。</br>
+      家計簿に必要な機能と、Chartkickを使いグラフを表示させました。</br>
+      コードの記述も、bootstrapを導入し、Sass記法を使い、記述量を減らすことに成功しました。</br>
+      RubyファイルもHaml記法を用いて記述量を減らしました。</br>
+      デプロイには、AWSのEC2を採用しました。
+      </p>
+      <h1>苦労した点</h1>
+      <p>全体を通して難しく、何度もパソコンを叩き壊しかけましたが、Dateメソッドを使い、データベースからの月間データの収集、それを用いてのグラフの表示は特に苦戦しました。</p>
+      <h1>実際のアプリ</h1>
+      <a href="http://54.92.58.85" class="link" target=”_blank”>http://54.92.58.85</a>
+      <h1>ソースコード</h1>
+      <a href="https://github.com/w-hideki/kakeibo_app" class="link" target=”_blank”>GitHub</a>
+      <h1>開発環境</h1>
+      <p>Ruby/Ruby on Rails/javascript</br>Bootstrap/Sass/Haml/Chartkick/AWS/Visual Studio Code</p>
+    
+    </div>
 </section>
 
 <div class="start">

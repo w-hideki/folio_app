@@ -75,6 +75,11 @@ ul {
   justify-content: space-around;
 }
 
+.btn{
+  width: 120px;
+  text-align: center;
+}
+
 .main1-back{
   font-size: 50px;
   text-align: center;
@@ -177,7 +182,7 @@ ul {
 .main3 {
   position: absolute;
   top: 40%;
-  left: 43%;
+  left: 38%;
   font-size: 30px;
   color: white;
   letter-spacing: 0.5em;
@@ -207,7 +212,7 @@ ul {
 .main4 {
   position: absolute;
   top: 40%;
-  left: 38%;
+  left: 43%;
   font-size: 30px;
   color: white;
   letter-spacing: 0.5em;
@@ -241,7 +246,7 @@ ul {
 } */
 
 .box-kata {
-  height: 800px;
+  height: 950px;
   width: 90%;
   background: rgba(0, 183, 255, 0.438);
   margin: auto;
@@ -259,6 +264,10 @@ ul {
   font-size: 20px;
   color: white;
 }
+
+.box-kata-text{
+  margin: 0 100px 0 0;
+}
 .box-image{
   height: 250px;
   width: 500px;
@@ -272,3 +281,8 @@ ul {
 .video{
   margin-left: 50px;
 }
+
+.video-todo{
+  margin: 100px 50px
+}
+
