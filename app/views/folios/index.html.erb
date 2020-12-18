@@ -9,24 +9,28 @@
 </div>
 
 <div id="menu"> 
-  <a class="title" href="#">和田秀樹 Portfolio Site</a>
+  <a class="title" href="#">ポートフォリオ</a>
 
   <div class="menu-right" >
-    <ul >
+    <ul id="navi">
     <li class ="btn"><a href="#1">About me</a></li>
-    <li class ="btn"><a href="#2">卒業課題</a></li>
-    <li class ="btn"><a href="#3">Javascript</a></li>
-    <li class ="btn"><a href="#4">Rails</a></li>
+    <li class ="btn"><a href="#2">Rails</a></li>
+    <li class ="btn"><a href="#3">卒業課題</a></li>
+    <li class ="btn"><a href="#4">Javascript</a></li>
+    <li class ="btn"><a href="#5">未完成</a></li>
     </ul>
   </div>
+  <div class="nav_btn" id="nav_btn">
+  <span class="hamburger_line hamburger_line1"></span>
+  <span class="hamburger_line hamburger_line2"></span>
+  <span class="hamburger_line hamburger_line3"></span>
+  </div>
+    <div class="nav_bg" id="nav_bg"></div>
 </div>
 
 <section id ="1">
-  <div class="main1-back">
+  <div class="main-tittle">
   <h1>-About me-</h1>
-    <div class="main1">
-    <h2>About me</h2>
-    </div>
   </div>
 
   <div class=about-box>
@@ -50,21 +54,56 @@
     </div>
   </div>
 </section>
+<section id=2>
+  <div class="main-tittle">
+  <h1>-Rails-</h1>
+  </div>
 
-<section id="2">
-  <div class="main2-back">
-  <h1>-最終課題-</h1>
-    <div class="main2">
-    <h2>-最終課題-</h2>
+   <div class="box-kata">
+    <div class="box-kata-image">
+      <p>実際のアプリの画像</p>
+      <%= image_tag 'kakeibo.png', class:"box-image" %>
+       <div class="video">
+        <p>実際のアプリの動き</p>
+<a href="https://gyazo.com/c712ca1a7ec8f1405f8fafe188a823b2"><video class=vs alt="Video from Gyazo" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/c712ca1a7ec8f1405f8fafe188a823b2.mp4" type="video/mp4" /></video></a>
+   </div>
     </div>
+
+    <div class="box-kata-text">
+      <h1>- 家計簿アプリ -</h1>
+      <p>こちらは在学中、個人開発で最も力を入れて作ったアプリです!</p>
+      <h1>- 紹介 -</h1>
+      <p>今までがフロントエンドのアプリばかりだったので、テックキャンプでは、主にrailsを勉強したので、その総まとめにと思い作りました。</br>
+      家計簿に必要な機能と、Chartkickを使いグラフを表示させました。</br>
+      コードの記述も、Sass記法を使い、記述量を減らすことに成功しました。</br>
+      RubyファイルもHaml記法を用いて記述量を減らしました。</br>
+      デプロイには、AWSのEC2を採用しました。
+      </p>
+      <h1>- 苦労した点 -</h1>
+      <p>全体を通して難しく、何度もパソコンを叩き壊しかけましたが、Dateメソッドを使い、データベースからの月間データの収集、それを用いてのグラフの表示は特に苦戦しました。</p>
+      <h1>- 実際のアプリ -</h1>
+      <a href="http://54.92.58.85" class="link" target=”_blank”>http://54.92.58.85</a>
+      <h1>- ソースコード -</h1>
+      <a href="https://github.com/w-hideki/kakeibo_app" class="link" target=”_blank”>GitHub</a>
+      <h1>- 開発環境 -</h1>
+      <p>Ruby, Ruby on Rails, javascript, Sass, Haml, AWS, GitHub, Visual Studio Code</p>
+    
+    </div>
+</section>
+
+<section id="3">
+  <div class="main-tittle">
+  <h1>-最終課題-</h1>
   </div>
 
   <div class="box-kata">
     <div class="box-kata-image">
-       <%= image_tag 'furima.png', class:"box-image" %>
-       <div class="video">
-   <a href="https://gyazo.com/33fffffb10491b0160f25f9abeeb5c6c"><video alt="Video from Gyazo" width="500" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/33fffffb10491b0160f25f9abeeb5c6c.mp4" type="video/mp4" /></video></a>
-   </div>
+     <p>実際のアプリの画像</p>
+      <%= image_tag 'furima.png', class:"box-image" %>
+      <p>実際のアプリの動き</p>
+      <div class="video">
+        <a href="https://gyazo.com/33fffffb10491b0160f25f9abeeb5c6c"><video class=vs alt="Video from Gyazo" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/33fffffb10491b0160f25f9abeeb5c6c.mp4" type="video/mp4" /></video></a>
+      </div>
     </div>
 
     <div class="box-kata-text">
@@ -90,18 +129,16 @@
   </div>
 </section>
 
-<section id=3>
-  <div class="main3-back">
+<section id=4>
+  <div class="main-tittle">
     <h1>-Javascript-</h1>
-    <div class="main3">
-      <h2>-Javascript-</h2>
-    </div>
   </div>
 
   <div class="box-kata">
     <div class="box-kata-image">
-       <div class="video-todo">
-  <a href="https://gyazo.com/f6879a5b0d89a95d953285b426fd08cf"><video alt="Video from Gyazo" width="500" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/f6879a5b0d89a95d953285b426fd08cf.mp4" type="video/mp4" /></video></a>
+        <div class="video-todo">
+          <p>実際のアプリの動き</p>
+  <a href="https://gyazo.com/f6879a5b0d89a95d953285b426fd08cf"><video class=vs-todo alt="Video from Gyazo" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/f6879a5b0d89a95d953285b426fd08cf.mp4" type="video/mp4" /></video></a>
    </div>
     </div>
 
@@ -127,19 +164,18 @@
   </div>
 </section>
 
-<section id=3>
-  <div class="main3-back">
+<section id=4>
+  <div class="main-tittle">
     <h1>-Javascript-</h1>
-    <div class="main3">
-      <h2>-Javascript-</h2>
-    </div>
   </div>
 
  <div class="box-kata">
     <div class="box-kata-image">
+         <p>実際のアプリの画像</p>
       <%= image_tag 'chat.png', class:"box-image" %>
        <div class="video">
-<a href="https://gyazo.com/884b0b91da38877b7244e9bdd1ca4663"><video alt="Video from Gyazo" width="500" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/884b0b91da38877b7244e9bdd1ca4663.mp4" type="video/mp4" /></video></a>
+          <p>実際のアプリの動き</p>
+<a href="https://gyazo.com/884b0b91da38877b7244e9bdd1ca4663"><video class=vs alt="Video from Gyazo" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/884b0b91da38877b7244e9bdd1ca4663.mp4" type="video/mp4" /></video></a>
    </div>
     </div>
 
@@ -161,56 +197,19 @@
   </div>
 </section>
 
-<section id=4>
-  <div class="main4-back">
-  <h1>-Rails-</h1>
-    <div class="main4">
-    <h2>-Rails-</h2>
-    </div>
+
+<section id=5>
+  <div class="main-tittle">
+  <h1>-未完成-</h1>
   </div>
 
    <div class="box-kata">
     <div class="box-kata-image">
-      <%= image_tag 'kakeibo.png', class:"box-image" %>
-       <div class="video">
-<a href="https://gyazo.com/c712ca1a7ec8f1405f8fafe188a823b2"><video alt="Video from Gyazo" width="500" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/c712ca1a7ec8f1405f8fafe188a823b2.mp4" type="video/mp4" /></video></a>
-   </div>
-    </div>
-
-    <div class="box-kata-text">
-      <h1>- 家計簿アプリ -</h1>
-      <p>こちらは在学中、個人開発で最も力を入れて作ったアプリです!</p>
-      <h1>- 紹介 -</h1>
-      <p>今までがフロントエンドのアプリばかりだったので、テックキャンプでは、主にrailsを勉強したので、その総まとめにと思い作りました。</br>
-      家計簿に必要な機能と、Chartkickを使いグラフを表示させました。</br>
-      コードの記述も、bootstrapを導入し、Sass記法を使い、記述量を減らすことに成功しました。</br>
-      RubyファイルもHaml記法を用いて記述量を減らしました。</br>
-      デプロイには、AWSのEC2を採用しました。
-      </p>
-      <h1>- 苦労した点 -</h1>
-      <p>全体を通して難しく、何度もパソコンを叩き壊しかけましたが、Dateメソッドを使い、データベースからの月間データの収集、それを用いてのグラフの表示は特に苦戦しました。</p>
-      <h1>- 実際のアプリ -</h1>
-      <a href="http://54.92.58.85" class="link" target=”_blank”>http://54.92.58.85</a>
-      <h1>- ソースコード -</h1>
-      <a href="https://github.com/w-hideki/kakeibo_app" class="link" target=”_blank”>GitHub</a>
-      <h1>- 開発環境 -</h1>
-      <p>Ruby, Ruby on Rails, javascript, Bootstrap, Sass, Haml, AWS, GitHub, Visual Studio Code</p>
-    
-    </div>
-</section>
-<section id=4>
-  <div class="main4-back">
-  <h1>-Rails-</h1>
-    <div class="main4">
-    <h2>-Rails-</h2>
-    </div>
-  </div>
-
-   <div class="box-kata">
-    <div class="box-kata-image">
+      <p>実際のアプリの画像</p>
       <%= image_tag 'weight.png', class:"box-image" %>
        <div class="video">
-<a href="https://gyazo.com/765d4982313817f5fab37108771c5f69"><video alt="Video from Gyazo" width="500" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/765d4982313817f5fab37108771c5f69.mp4" type="video/mp4" /></video></a>
+        <p>実際のアプリの動き</p>
+<a href="https://gyazo.com/765d4982313817f5fab37108771c5f69"><video class=vs alt="Video from Gyazo" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/765d4982313817f5fab37108771c5f69.mp4" type="video/mp4" /></video></a>
    </div>
     </div>
 
@@ -218,9 +217,9 @@
       <h1>- 体重管理アプリ -</h1>
       <p>こちらはついでの失敗談。完成には至らなかったアプリです!</p>
       <h1>- 紹介 -</h1>
-      <p>家計簿アプリの前に作ろうとした、本来の目玉アプリ。</br>日々の体重を一覧で見れて、月ごとの総摂取カロリーがわかるアプリにしようとした。</br>グラフはChartkick、一目でわかるようにカレンダーのgem、Simplekalendarを導入。</br>
+      <p>家計簿アプリの前に作ろうとした、本来の目玉アプリ。</br>日々の体重を一覧で見れて、月ごとの総摂取カロリーがわかるアプリにしようとした。</br>グラフはChartkick、一目でわかるようにカレンダーのgem、Simplecalendarを導入。</br>
       しかし、月間データが取得できずに断念。</br>
-      Simplekalendarに必ずいる”start_time”と言うカラムに、Dateメソッドがどうやってもうまく作用しない。</br>
+      Simpleccalendarに必ずいる”start_time”と言うカラムに、Dateメソッドがどうやってもうまく作用しない。</br>
       という事があり、断念はしたが、グラフを使ったアプリがどうしても作りたくて、”created_at”ならDateメソッドは普通に使えるので、この２つを使って何かできないかと思い、家計簿アプリを作ることにしました。</br>
       いつか必ず完成させたい！！
       </p>

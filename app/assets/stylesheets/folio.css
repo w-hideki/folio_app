@@ -1,44 +1,63 @@
+.start {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9000;
+}
+.start p {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 9999;
+  width: 280px;
+}
+
 .top-image {
   width: 100%;
   height: 650px;
   position: relative;
 }
 
-.speech-bubble{
+.speech-bubble {
   position: absolute;
   top: 22%;
   left: 65%;
 }
-.arrow_box{
-  position:relative;
-  width:300px;
-  height:140px;
-  background:#C1E6E0;
-  padding:20px;
-  color:#333333;
-  font-size:15px;
-  font-weight:bold;
-  font-style:oblique;
-  border-radius:27px;
-  -webkit-border-radius:27px;
-  -moz-border-radius:27px;
+.arrow_box {
+  position: relative;
+  width: 300px;
+  height: 140px;
+  background: #c1e6e0;
+  padding: 20px;
+  color: #333333;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: oblique;
+  border-radius: 27px;
+  -webkit-border-radius: 27px;
+  -moz-border-radius: 27px;
 }
-.arrow_box:after{
+.arrow_box:after {
   border: solid transparent;
-  content:'';
-  height:0;
-  width:0;
-  pointer-events:none;
-  position:absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  position: absolute;
   border-color: rgba(193, 230, 224, 0);
-  border-top-width:10px;
-  border-bottom-width:10px;
-  border-left-width:30px;
-  border-right-width:30px;
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+  border-left-width: 30px;
+  border-right-width: 30px;
   margin-top: -10px;
-  border-right-color:#C1E6E0;
-  right:100%;
-  top:50%;
+  border-right-color: #c1e6e0;
+  right: 100%;
+  top: 50%;
 }
 
 .fixed {
@@ -50,6 +69,7 @@
 }
 
 #menu {
+  width: 100%;
   display: flex;
   background-color: #555;
   height: 50px;
@@ -61,50 +81,37 @@
   text-decoration: none;
   color: #fff;
 }
-.title{
-  width: 1500px;
+.title {
+  width: 100%;
   padding-left: 50px;
   letter-spacing: 0.5em;
+  font-weight: 600;
 }
-.menu-right{
+.menu-right {
   width: 100%;
 }
 
 ul {
   display: flex;
-  justify-content: space-around;
+  float: right;
 }
 
-.btn{
+.btn {
   width: 120px;
   text-align: center;
 }
 
-.main1-back{
+.main-tittle {
   font-size: 50px;
   text-align: center;
   margin: 100px 0 20px 0;
-  color: #aeaeae;
-  position: relative;
+  color: lightyellow;
   letter-spacing: 0.3em;
 }
 
-.main1-back h1{
-  opacity: 0.2;
-}
-
-.main1 {
-  position: absolute;
-  top: 40%;
-  left: 40%;
-  font-size: 30px;
-  color: white;
-  letter-spacing: 0.5em;
-}
-
-.about-box{
+.about-box {
   width: 90%;
-  height: 1050px;
+  height: auto;
   background: rgba(0, 183, 255, 0.438);
   display: flex;
   align-items: center;
@@ -113,7 +120,7 @@ ul {
   border-radius: 50px;
 }
 
-.about-image{
+.about-image {
   width: 300px;
   height: 400px;
   border: rgba(0, 183, 255, 0.438);
@@ -121,7 +128,7 @@ ul {
   margin-left: 100px;
 }
 
-.about-text{
+.about-text {
   font-size: 20px;
   color: lightyellow;
   margin: 0 100px;
@@ -140,156 +147,331 @@ ul {
   font-size: 25px;
 }
 
-.subheading-name{
+.subheading-name {
   font-size: 35px;
 }
 
-.main2-back{
-  font-size: 50px;
-  text-align: center;
-  margin: 20px 0px;
-  color: #aeaeae;
-  position: relative;
-  letter-spacing: 0.3em;
-}
-
-.main2-back h1{
-  opacity: 0.2;
-}
-
-.main2 {
-  position: absolute;
-  top: 40%;
-  left: 42%;
-  font-size: 30px;
-  color: white;
-  letter-spacing: 0.5em;
-}
-
-.main3-back{
-  font-size: 50px;
-  text-align: center;
-  margin: 20px 0px;
-  color: #aeaeae;
-  position: relative;
-  letter-spacing: 0.3em;
-}
-
-.main3-back h1{
-  opacity: 0.2;
-}
-
-.main3 {
-  position: absolute;
-  top: 40%;
-  left: 38%;
-  font-size: 30px;
-  color: white;
-  letter-spacing: 0.5em;
-}
-.box3 {
-  height: 700px;
-  width: 90%;
-  background: rgba(0, 183, 255, 0.438);
-  margin: auto;
-  border: rgba(0, 183, 255, 0.438);
-  border-radius: 50px;
-}
-
-.main4-back{
-  font-size: 50px;
-  text-align: center;
-  margin: 20px 0px;
-  color: #aeaeae;
-  position: relative;
-  letter-spacing: 0.3em;
-}
-
-.main4-back h1{
-  opacity: 0.2;
-}
-
-.main4 {
-  position: absolute;
-  top: 40%;
-  left: 43%;
-  font-size: 30px;
-  color: white;
-  letter-spacing: 0.5em;
-}
-.box4 {
-  height: 700px;
-  width: 90%;
-  background: rgba(0, 183, 255, 0.438);
-  margin: auto;
-  border: rgba(0, 183, 255, 0.438);
-  border-radius: 50px;
-}
-
-.start {
-	background: #FFF;
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-  z-index: 9000;
-}
-.start p {
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	display: none;
-	z-index: 9999;
-	width: 280px;
-}
-
 .box-kata {
-  height: 950px;
+  height: auto;
   width: 90%;
   background: rgba(0, 183, 255, 0.438);
   margin: auto;
   border: rgba(0, 183, 255, 0.438);
   border-radius: 50px;
   display: flex;
+  padding: 20px 0;
+}
+
+.box-kata-image{
+  padding: 50px;
+}
+.box-kata-image p{
+  text-align: center;
 }
 
 .box-kata h1 {
   font-size: 25px;
-  margin: 30px 0 0 0px;
 }
 
-
-.box-kata p{
+.box-kata p {
   font-size: 20px;
   color: lightyellow;
+  margin: 10px 0;
 }
 
 .box-kata-text{
-  margin: 0 100px 0 0;
-}
-.box-image{
-  height: 250px;
-  width: 500px;
-  margin: 100px 50px;
+  margin-right: 50px;
 }
 
-.link{
+.box-image {
+  height: 250px;
+  width: 500px;
+}
+
+.vs{
+  width: 500px;
+  height: 250px;
+}
+
+.vs-todo{
+  width: 500px;
+  height: 400px;
+}
+
+.link {
   color: red;
 }
 
-.video{
-  margin-left: 50px;
-}
-
-.video-todo{
-  margin: 100px 50px
-}
-
-.box-kata h2{
+.box-kata h2 {
   font-size: 22px;
   color: red;
   margin-top: 20px;
+}
+
+/* タブレット表示時 */
+@media (max-width: 1024px) {
+  .top-image {
+    width: 100%;
+    height: 550px;
+    margin-bottom: 100px;
+  }
+
+  .speech-bubble {
+    top: 22%;
+    left: 60%;
+  }
+  .arrow_box {
+    width: 250px;
+    height: 120px;
+    font-size: 13px;
+  }
+
+  #menu {
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .title {
+    padding-left: 40px;
+  }
+
+  .main-tittle {
+    font-size: 40px;
+  }
+  
+  .about-box {
+    display: block;
+    padding: 40px 10px 10px;
+    margin: auto;
+  }
+
+  .about-image {
+    display: block;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  .about-text {
+    font-size: 18px;
+    margin: 10px 30px 20px ;
+  }
+
+  .subheading {
+    color: black;
+    font-size: 22px;
+  }
+
+  .subheading-name {
+    font-size: 32px;
+  }
+
+  .box-kata {
+    display: block;
+    padding: 40px 10px 10px;
+  }
+
+  .box-kata h1 {
+    font-size: 22px;
+  }
+  
+  .box-kata p {
+    font-size: 18px;
+  }
+
+  .box-kata-text{
+    margin: 10px 30px 20px ;
+  }
+
+  .box-kata-image{
+    padding: 0;
+  }
+  
+  .box-image{
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .video {
+    text-align: center;
+  }
+
+  .video-todo{
+    text-align: center;
+  }
+
+  .box-kata h2 {
+    font-size: 20px;
+    color: red;
+    margin-top: 20px 0;
+}
+
+@media screen and (max-width: 797px) {
+  /* bager menu */
+  #menu #navi {
+    transition: all 0.6s;
+    overflow-y: auto;
+    padding-top: 40px;
+    width: 140px;
+    height: 100vh;
+    z-index: 200;
+    top: 0;
+    right: -320px;
+    background-color:  rgba(0, 183, 255, 0.438);
+    position: fixed;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  #menu #navi li {
+    padding: 10px;
+  }
+  #menu .nav_btn {
+    width: 44px;
+    height: 44px;
+    z-index: 300;
+    right: 7px;
+    cursor: pointer;
+    position: absolute;
+  }
+  .hamburger_line {
+    transition: all 0.6s;
+    width: 34px;
+    height: 2px;
+    left: 5px;
+    background-color: #000;
+    position: absolute;
+  }
+  .hamburger_line1 {
+    top: 10px;
+  }
+  .hamburger_line2 {
+    top: 21px;
+  }
+  .hamburger_line3 {
+    top: 32px;
+  }
+  .nav_bg {
+    opacity: 0;
+    transition: all 0.6s;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    background-color: #000;
+    cursor: pointer;
+    position: fixed;
+  }
+  /* 表示された時用のCSS */
+  .nav_open #menu #navi {
+    right: 0;
+  }
+  .nav_open .nav_bg {
+    opacity: 0.8;
+    visibility: visible;
+  }
+  .nav_open .hamburger_line1 {
+    transform: rotate(45deg);
+    top: 20px;
+  }
+  .nav_open .hamburger_line2 {
+    width: 0;
+    left: 50%;
+  }
+  .nav_open .hamburger_line3 {
+    transform: rotate(-45deg);
+    top: 20px;
+  }
+}
+
+/* スマホ表示時 */
+@media (max-width: 500px) {
+  .top-image {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 150px;
+  }
+
+  .speech-bubble {
+    top: 22%;
+    left: 60%;
+  }
+  .arrow_box {
+    width: 130px;
+    height: 90px;
+    font-size: 9px;
+  }
+
+  #menu {
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .title {
+    padding-left: 30px;
+  }
+
+  .main-tittle {
+    font-size: 30px;
+  }
+
+  .about-box {
+    width: 90%;
+    display: block;
+    padding: 40px 10px 10px;
+    margin: auto;
+  }
+  
+  .about-image {
+    display: block;
+    width: 350px;
+    height: 450px;
+    margin: 0 auto;
+  }
+  
+  .about-text {
+    font-size: 15px;
+    margin: 10px;
+  }
+  
+  .subheading {
+    color: black;
+    font-size: 20px;
+  }
+  
+  .subheading-name {
+    font-size: 30px;
+  }
+
+  .box-kata h1 {
+    font-size: 20px;
+    margin: 30px 0 0 0px;
+  }
+  
+  .box-kata p {
+    font-size: 15px;
+    color: lightyellow;
+    margin: 10px 0;
+  }
+  
+  .box-image {
+    height: 200px;
+    width: 350px;
+  }
+  
+  .vs{
+    width: 350px;
+    height: 200px;
+  }
+  
+  .vs-todo{
+    width: 400px;
+    height: 300px;
+  }
+
+  .box-kata h2 {
+    font-size: 18px;
+    color: red;
 }
 
