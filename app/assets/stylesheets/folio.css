@@ -74,7 +74,7 @@
   background-color: #555;
   height: 50px;
   line-height: 50px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #menu a {
@@ -93,7 +93,6 @@
 
 ul {
   display: flex;
-  float: right;
 }
 
 .btn {
@@ -307,7 +306,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 797px) {
+@media screen and (max-width: 917px) {
   /* bager menu */
   #menu #navi {
     transition: all 0.6s;
